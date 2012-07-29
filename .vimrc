@@ -5,3 +5,6 @@ call vundle#rc()
 
 runtime! common_config/*.vim
 runtime! custom_config/*.vim
+
+colorscheme vividchalk
+unmap gt
