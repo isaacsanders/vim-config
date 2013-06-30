@@ -2,7 +2,6 @@
 " install plugins.
 
 " Plugins requiring no additional configuration or keymaps
-  Bundle "git://github.com/vim-scripts/Color-Sampler-Pack.git"
   Bundle "git://github.com/oscarh/vimerl.git"
   Bundle "git://github.com/tpope/vim-git.git"
   Bundle "git://github.com/harleypig/vcscommand.vim.git"
@@ -30,10 +29,6 @@
   Bundle "git://github.com/smerrill/vim-arduino.git"
     au BufNewFile,BufRead *.pde set filetype=arduino
     au BufNewFile,BufRead *.ino set filetype=arduino
-
-" Less
-  Bundle "git://github.com/groenewege/vim-less.git"
-    au BufNewFile,BufRead *.less set filetype=less
 
 " Mustache
   Bundle "git://github.com/juvenn/mustache.vim.git"
