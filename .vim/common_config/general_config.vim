@@ -108,5 +108,7 @@
 " JSON is JS
   au BufNewFile,BufRead *.json set ai filetype=javascript
 
+" Python indentation
+  au BufNewFile,BufRead *.py set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 " different color for each paren pairs
 let vimclojure#ParenRainbow  = 1
