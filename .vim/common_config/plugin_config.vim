@@ -16,7 +16,6 @@
   Bundle "git://github.com/ervandew/supertab.git"
   Bundle "git://github.com/tomtom/tcomment_vim.git"
   Bundle "git://github.com/michaeljsmith/vim-indent-object.git"
-  Bundle "git://github.com/tsaleh/vim-matchit.git"
   Bundle "git://github.com/kana/vim-textobj-user.git"
   Bundle "git://github.com/nelstrom/vim-textobj-rubyblock.git"
   Bundle "git://github.com/tpope/vim-repeat.git"
@@ -35,10 +34,6 @@
     " Copied from the plugin; not sure why it isn't working normally
     au BufNewFile,BufRead *.mustache,*.handlebars,*.hbs set filetype=mustache
 
-" Slim
-  Bundle "git://github.com/bbommarito/vim-slim.git"
-    au BufNewFile,BufRead *.slim set filetype=slim
-
 " Less
   Bundle "git://github.com/groenewege/vim-less.git"
     au BufNewFile,BufRead *.less set filetype=less
@@ -46,10 +41,6 @@
 " Handlebars
   Bundle "git://github.com/nono/vim-handlebars.git"
     au BufNewFile,BufRead *.hbs set filetype=handlebars
-
-" Stylus
-  Bundle "git://github.com/wavded/vim-stylus.git"
-    au BufNewFile,BufRead *.styl set filetype=stylus
 
 " Coffee script
   Bundle "git://github.com/kchmck/vim-coffee-script.git"
@@ -89,7 +80,7 @@
 " Syntastic for catching syntax errors on save
   Bundle "git://github.com/scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
-    let g:syntastic_quiet_warnings=1
+    let g:syntastic_quiet_messages={'level': 'warnings'}
     let g:syntastic_disabled_filetypes = ['sass']
 
 " rails.vim, nuff' said
