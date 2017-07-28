@@ -6,7 +6,8 @@ call vundle#rc()
 runtime! common_config/*.vim
 runtime! custom_config/*.vim
 
-colorscheme vividchalk
+" colorscheme vividchalk
+colorscheme vibrantink
 
 let g:rails_projections = {
       \ "app/workflows/*.rb": {

@@ -2,6 +2,8 @@
 " install plugins.
 
 " Plugins requiring no additional configuration or keymaps
+  Bundle "git://github.com/vim-scripts/Align.git"
+  Bundle "git://github.com/vim-scripts/SQLUtilities.git"
   Bundle "git://github.com/oscarh/vimerl.git"
   Bundle "git://github.com/tpope/vim-git.git"
   Bundle "git://github.com/harleypig/vcscommand.vim.git"
@@ -24,6 +26,18 @@
   Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git://github.com/vim-scripts/vimwiki.git"
   Bundle "git://github.com/vim-scripts/pig.vim.git"
+  Bundle "git://github.com/nathanielc/vim-tickscript.git"
+    au BufNewFile,BufRead *.tick set filetype=tick
+
+  Bundle "git://github.com/elixir-lang/vim-elixir.git"
+    au BufNewFile,BufRead *.ex set filetype=elixir
+    au BufNewFile,BufRead *.exs set filetype=elixir
+    au BufNewFile,BufRead *.eex set filetype=eelixir
+
+  Bundle "https://github.com/ElmCast/elm-vim.git"
+    au BufNewFile,BufRead *.elm set filetype=elm
+
+    let g:elm_format_autosave = 1
 
   Bundle "git://github.com/nanki/treetop.vim.git"
     au BufNewFile,BufRead *.treetop set filetype=treetop
