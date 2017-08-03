@@ -25,7 +25,22 @@
   Bundle "git://github.com/wgibbs/vim-irblack.git"
   Bundle "git://github.com/wavded/vim-stylus.git"
   Bundle "git://github.com/vim-scripts/vimwiki.git"
+
+  Bundle "git://github.com/wting/rust.vim.git"
+    au BufNewFile,BufRead *.rs set filetype=rust
+
+  Bundle "git://github.com/derekwyatt/vim-scala.git"
+    au BufNewFile,BufRead *.scala set filetype=scala
+
+  Bundle "git://github.com/lepture/vim-jinja.git"
+    au BufNewFile,BufRead *.jinja set filetype=jinja
+
   Bundle "git://github.com/vim-scripts/pig.vim.git"
+    au BufNewFile,BufRead *.pig set filetype=pig
+
+  Bundle "git://github.com/autowitch/hive.vim.git"
+    au BufNewFile,BufRead *.hql set filetype=hive
+
   Bundle "git://github.com/nathanielc/vim-tickscript.git"
     au BufNewFile,BufRead *.tick set filetype=tick
 
@@ -111,6 +126,7 @@
 
 " Clojure Highlighting"
   Bundle "https://github.com/vim-scripts/VimClojure.git"
+  autocmd BufNewFile,BufRead *.cljs set filetype=clojure
   autocmd BufNewFile,BufRead *.clj set filetype=clojure
 
 " Jade Highlighting"
